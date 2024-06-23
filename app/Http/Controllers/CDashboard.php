@@ -10,7 +10,6 @@ class CDashboard extends Controller
 {
     public function index(jumlahAnggota $chart)
     {
-        $anggota['chart'] = $chart->build();
         $jumlah_pegawai = MPegawai::count();
         $jumlah_pns = MPegawai::where('status_kepegawaian', 'PNS')->count();
         $jumlah_kontrak = MPegawai::where('status_kepegawaian', 'Kontrak')->count();

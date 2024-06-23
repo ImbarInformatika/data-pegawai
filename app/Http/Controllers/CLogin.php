@@ -27,7 +27,7 @@ class CLogin extends Controller
         if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
             session()->flash('login', 'Berhasil Login');
-            return redirect('/');
+            return redirect('/dashboard');
         }
 
         return back()

@@ -62,7 +62,7 @@
             </div>
         </div>
     </div>
-    <div class="row">
+    {{-- <div class="row">
         <!-- Jumlah Pegawai Card -->
         <div class="col-xl-4 mb-4">
             <div class="card border-left-primary shadow h-100 py-2">
@@ -120,7 +120,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
 
     <div class="row">
         <div class="col-xl-12 mb-4">

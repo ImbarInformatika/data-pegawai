@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\CDaftarPegawai;
 use App\Http\Controllers\CDashboard;
+use App\Http\Controllers\CLanding;
 use App\Http\Controllers\CLogin;
 use Illuminate\Support\Facades\Route;
 
@@ -13,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 | LOGIN
 |--------------------------------------------------------------------------*/
 
+Route::get('/', [CLanding::class, 'index'])->name('landing-page');
 Route::get('/login', [CLogin::class, 'index'])->name('login');
 Route::post('/proses-login', [CLogin::class, 'proseslogin'])->name('proses-login');
 Route::post('/logout', [CLogin::class, 'logout'])->name('logout');
@@ -27,7 +29,7 @@ Route::group(['middleware' => 'auth'], function () {
 | DASHBOARD
 |--------------------------------------------------------------------------*/
 
-    Route::get('/', [CDashboard::class, 'index'])->name('dashboard');
+    Route::get('/dashboard', [CDashboard::class, 'index'])->name('dashboard');
 
 
     /*
