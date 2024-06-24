@@ -5,6 +5,10 @@
         <i class="fa fa-bars"></i>
     </button>
 
+    {{-- <ul class="navbar-heder mt-4">
+        <h1>saya</h1>
+    </ul> --}}
+
     <!-- Topbar Navbar -->
     <ul class="navbar-nav ml-auto">
         <!-- Nav Item - User Information -->

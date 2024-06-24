@@ -22,8 +22,37 @@
             color: white;
         }
 
-        /* .team-member img.rounded-circle {
-            border: 2px solid #007bff;
+        /* body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        } */
+
+        /* .scrol {
+            overflow: hidden;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .scrol h1 {
+            display: inline-block;
+            padding-left: 100%;
+            animation: scroll-left 20s linear infinite;
+            font-size: 2rem;
+            color: #000;
+            white-space: nowrap;
+        }
+
+        @keyframes scroll-left {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
         } */
     </style>
 </head>
@@ -38,7 +67,10 @@
     </nav>
     <section class="page-section bg-light" id="team">
         <div class="container">
-            <div class="text-center">
+            {{-- <div class="scrol">
+                <h1>SELAMAT DATANG DI DAFTAR PEGAWAI</h1>
+            </div> --}}
+            <div class="text-center mt-5">
                 <h2 class="section-heading text-uppercase">Struktur Organisasi</h2>
             </div>
             <div class="row mt-5">

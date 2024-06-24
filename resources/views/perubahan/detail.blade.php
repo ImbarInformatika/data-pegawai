@@ -26,6 +26,11 @@
                         <td>{{ $datapegawai->nama }}</td>
                     </tr>
                     <tr>
+                        <th style="padding-right: 30px;">Jenis Kelamin</th>
+                        <th style="padding-right: 5px;">:</th>
+                        <td>{{ $datapegawai->jk }}</td>
+                    </tr>
+                    <tr>
                         <th style="padding-right: 30px;">NIK</th>
                         <th style="padding-right: 5px;">:</th>
                         <td>{{ $datapegawai->nik }}</td>

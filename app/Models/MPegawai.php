@@ -11,7 +11,7 @@ class MPegawai extends Model
 
     protected $table = 'pegawai';
     protected $fillable = [
-        'nama', 'nik', 'tempat_lahir', 'tanggal_lahir', 'alamat', 'no_telepon', 'email',
+        'nama', 'jk', 'nik', 'tempat_lahir', 'tanggal_lahir', 'alamat', 'no_telepon', 'email',
         'status_pernikahan', 'jabatan', 'status_kepegawaian', 'nip', 'pendidikan_terakhir', 'foto'
     ];
 }

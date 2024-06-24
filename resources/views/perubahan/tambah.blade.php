@@ -30,6 +30,14 @@
                             value="{{ old('nama') }}">
                     </div>
                     <div class="mb-3">
+                        <label for="jk" class="form-label">Jenis kelamin</label>
+                        <select type="text" class="form-control" id="jk" name="jk">
+                            <option>Pilih Jenis Kelamin</option>
+                            <option value="pria" {{ old('jk') == 'pria' ? 'selected' : '' }}>Pria</option>
+                            <option value="wanita" {{ old('jk') == 'wanita' ? 'selected' : '' }}>Wanita</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
                         <label for="nik" class="form-label">Nomor Induk Kependudukan(NIK)</label>
                         <input type="text" class="form-control" id="nik" name="nik"
                             value="{{ old('nik') }}">
