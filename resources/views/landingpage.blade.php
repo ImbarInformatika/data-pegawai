@@ -97,7 +97,7 @@
                     <div class="team-member">
                         <img class="mx-auto rounded-circle"
                             src="
-                            @if ($kadis) {{ asset('storage/' . $sekretaris->foto) }}
+                            @if ($sekretaris) {{ asset('storage/' . $sekretaris->foto) }}
                             @else 
                             {{ '-' }} @endif " />
                         <h4>
